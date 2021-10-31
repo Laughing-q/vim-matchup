@@ -205,11 +205,11 @@ function! s:init_default_mappings()
   endif
 
   if get(g:, 'matchup_text_obj_enabled', 0)
-    call s:map('x', 'i%', '<plug>(matchup-i%)')
+    call s:map('x', 'h%', '<plug>(matchup-i%)')
     call s:map('x', 'a%', '<plug>(matchup-a%)')
 
     if !s:old_style_ops
-      call s:map('o', 'i%', '<plug>(matchup-i%)')
+      call s:map('o', 'h%', '<plug>(matchup-i%)')
       call s:map('o', 'a%', '<plug>(matchup-a%)')
     endif
   endif
